@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface InfoTableViewCell : UITableViewCell
 
-- (void)setupTitleLabelInfoWithRow:(NSInteger)row;
+//- (void)setupTitleLabelInfoWithRow:(NSInteger)row;
 
 
 

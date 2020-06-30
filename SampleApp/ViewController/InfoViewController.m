@@ -43,7 +43,7 @@
     
     if (indexPath.row % 2 == 0) {
         InfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([InfoTableViewCell class])];//此方法用于从缓存池中找寻此id的cell，有就取出来用，没有就创建一个
-        [cell setupTitleLabelInfoWithRow:indexPath.row];
+//        [cell setupTitleLabelInfoWithRow:indexPath.row];
 //        NSLog(@"InfoTableViewCell = %p",cell);//%p，打印对象的内存地址
         return cell;
     }else {
@@ -55,7 +55,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return indexPath.row % 2 == 0 ? 62 : 40;
+    return indexPath.row % 2 == 0 ? 100 : 40;
 }
 
 
